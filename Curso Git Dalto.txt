@@ -98,7 +98,7 @@ forma encontrar el has del commit eliminado
 
 
 2:58:23 - Git Clone
-----------------------------------------
+--------------------------------------
 
 
 
