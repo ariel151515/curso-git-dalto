@@ -92,13 +92,14 @@ obtenemos el registro de todo el movimiento del puntero HEAD y de esa
 forma encontrar el has del commit eliminado
 
 
-2:38:36 - Introducción a GitHub
+3:13:00 - Git Pull & Git Fetch
 ----------------------------------------
+- Git Pull (baja el repo y lo fuciona con nuestro repositorio local)
 
 
-2:58:23 - Git Clone
+3:24:33 - Migrar repositorio local
 ----------------------------------------
-
+git push -u origin main
 
 
 
