@@ -1,0 +1,110 @@
+Curso Dalto
+---------------------
+
+0:08:08 - Configuración inicial
+-----------------------------------------
+$ cd nombrecarpeta (entra a la carpeta)
+$ cd ../ (vuelve para atras)
+$ cd g: (entra al disco /g)
+$ mkdir repo (crea una carpeta o directorio)
+$ rmdir repo (remueve la carpeta o el directorio)
+
+
+0:25:38 - Primeros pasos en GIT (add y commits)
+--------------------------------------------------
+$ git init (inicializa git)
+$ git add . 
+$ git rm --cached "archivo.txt" (remueve el archivo del Staging area)
+
+
+0:44:13 - Git restore y checkout y más
+----------------------------------------------
+- git checkout archivo.txt (vuelve ahacia atras, a la ultima vez que guardaste los cambios)
+- git reset --hard (vuelve al punto anterior si estan los archivos en el area de preparacion o  Staging)
+- git mv archivo.txt archivo2.txt (le cambia el nombre al archivo)
+- git status -s (se ve mejor con mas detalle)
+
+
+0:54:38 - Git Diff
+-------------------------------------------------
+- git log (lista los commit)
+- git log --oneline (abrevia los comit)
+- git log --oneline --all (muestra todos los commit de todas las ramas)
+- git config --global core.abbrev 8 (para que muestre la cantidad de caracteres que necesite ej: 8)
+- git diff eb1bbd21 6df949bd (compara entre commit)
+- git diff --name-only eb1bbd21 6df949bd (muestra el nombre de los archivos que cambiaron)
+- git diff --word-diff f6ffecdf  bd4aa3f3 (muestra el nombre de los archivos que cambiaron)
+
+
+1:06:41 - Modificar y deshacer Commits
+-------------------------------------------------
+- git commit --amend (modifica el ultimo commit)
+- git reset --soft b781f548 (se borran los commit posteriores al nuevo puntero)
+
+
+1:31:36 - Ramas (Branches)
+---------------------------------------------
+- git branch (muestra todas las ramas que tenemos creadas)
+- git branch modificar-dev (crea una rama)
+-  (crea la rama y se posiciona en ella)
+
+- git checkout modificar-dev (canbia de rama - es forma autigua)
+- git switch master (canbia de rama - es la recomendacion)
+  NOTA: Para crear una rama tengo que pararme en la master, de lo contrario se crea una rama de la rama 
+
+- git branch -d modificar-master (borra la rama)
+  para borrar la rama no devemos estar en la rama que queremos crear
+
+-  git branch -m modificar-texto modificar-texto2 (para modificar la rama)
+-  git branch -m cambiartexto (cambia el nombre de la rama deonde estoy posicionado)
+
+-  git merge modificar-texto2 (fuciona ramas)
+
+/* muestar como estan conbinadas las ramas :  $ git log --oneline
+5bf58da4 (HEAD -> modificar-texto-3, master) mensaje de ariel
+*/
+ 
+ NOTA: la rama sigue existiendo pero se fucionan los commit
+
+ - git reset --hard 78817 (desfuciona la rama, vielve al estado anterior)
+
+
+1:56:11 - Merge Conflicts 
+---------------------------------------------
+Con el editor Visual Esttudio
+
+
+2:12:47 - Git ignore (.gitignore)
+---------------------------------------------
+*.txt (ignora todos los archivos txt)
+!readme.txt (no ignores)
+
+
+2:27:20 - Alias en GIT
+---------------------------------------------
+- git log --oneline --all --graph (grafico de las ramas creadas)
+- alias: git config --global alias. log-mejorado "log --oneline --all --graph"
+
+
+2:31:52 - Git Reflog
+---------------------------------------------
+obtenemos el registro de todo el movimiento del puntero HEAD y de esa
+forma encontrar el has del commit eliminado
+
+
+2:38:36 - Introducción a GitHub
+----------------------------------------
+
+
+
+2:58:23 - Git Clone
+----------------------------------------
+
+
+
+
+
+
+
+
+
